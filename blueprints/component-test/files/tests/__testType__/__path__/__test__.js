@@ -13,7 +13,7 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{<%= componentPathName %>}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  // assert.equal(this.$().text().trim(), '');
 
   // Template block usage:"
   this.render(hbs`
@@ -22,10 +22,12 @@ test('it renders', function(assert) {
     {{/<%= componentPathName %>}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');<% } else if(testType === 'unit') { %>
+  //assert.equal(this.$().text().trim(), 'template block text');
+  <% } else if(testType === 'unit') { %>
   // Creates the component instance
   /*let component =*/ this.subject();
   // Renders the component to the page
   this.render();
-  assert.equal(this.$().text().trim(), '');<% } %>
+  //assert.equal(this.$().text().trim(), '');
+  <% } %>
 });
