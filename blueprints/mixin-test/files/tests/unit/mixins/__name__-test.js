@@ -8,5 +8,5 @@ module('<%= friendlyTestName %>');
 test('it works', function(assert) {
   let <%= classifiedModuleName %>Object = Ember.Object.extend(<%= classifiedModuleName %>Mixin);
   let subject = <%= classifiedModuleName %>Object.create();
-  assert.ok(subject);
+  // assert.ok(subject);
 });
