@@ -5,6 +5,6 @@ module('<%= friendlyTestName %>');
 
 // Replace this with your real tests.
 test('it works', function(assert) {
-  let result = <%= camelizedModuleName %>([42]);
-  assert.ok(result);
+  // let result = <%= camelizedModuleName %>([42]);
+  // assert.ok(result);
 });
